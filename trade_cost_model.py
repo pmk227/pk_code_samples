@@ -1,6 +1,3 @@
-Here is the code I wrote. This models fees for IBKR + regulatory fees, and I add it into each trade. I also have an input to add desired amount of slippage, but I've never spent much time on that model as I tend to model it on the pricing side (add a few ticks for slippage).  Feel free to use it for inspiration, or to just use it if you can fit it into your algos :) I even used some of my precious LLM credits to add documentation for ya'll since I realized I never added it when I wrote this the first time around! Hilariously, it turned a few 2 line methods into 25 line methods (check out the regulatory fee model haha)
-
-```
 """
 Trading Cost Model - Comprehensive Fee Calculation System
 
@@ -416,6 +413,3 @@ class TradeCostModel:
         trade_effect['price'] = slip_adjusted_price
         trade_effect.update(fee_dict)
         return trade_effect
-
-
-```
